@@ -11,7 +11,6 @@
   }
 body {
 	background-image: url('https://news.virginia.edu/sites/default/files/article_image/coronavirus_tracker_header2.jpg');
-	background-color: #e6b122;
 	color: #ffffff;
 	flex-direction: column;
 	font-family: 'Press Start 2P';
