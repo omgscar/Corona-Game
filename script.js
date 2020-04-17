@@ -18,7 +18,7 @@ let selected_virus = {};
 
 start_btn.addEventListener('click', () => {
 	screens[0].classList.add('up');
-	cardib.play();
+// 	cardib.play();
 });
 var fs=0;
 
@@ -44,7 +44,7 @@ choose_strain_btns.forEach(btn => {
 		selected_virus = {src, alt};
 		screens[1].classList.add('up');
 		setTimeout(createVirus, 1000);
-		cardib.play();
+// 		cardib.play();
 		startGame();
 	});
 });
