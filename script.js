@@ -18,8 +18,8 @@ let selected_virus = {};
 
 start_btn.addEventListener('click', () => {
 	screens[0].classList.add('up');
-// 	cardib.play();
 });
+
 var fs=0;
 
 end.addEventListener('click', () => {
@@ -30,12 +30,14 @@ end.addEventListener('click', () => {
 	final.innerHTML = `Your Score : ${fs}`;
 
 });
+
 rstrt.addEventListener('click', () => {
 	setTimeout(()=>{
 		location.reload();
 	},1000)
 
 });
+
 choose_strain_btns.forEach(btn => {
 	btn.addEventListener('click', () => {
 		const img = btn.querySelector('img');
@@ -44,7 +46,6 @@ choose_strain_btns.forEach(btn => {
 		selected_virus = {src, alt};
 		screens[1].classList.add('up');
 		setTimeout(createVirus, 1000);
-// 		cardib.play();
 		startGame();
 	});
 });
@@ -85,6 +86,7 @@ function catchVirus() {
 	}, 2000);
 	addViruses();
 }
+
 function increaseScore() {
 	score++;
 	if (score >= 20) {
@@ -93,6 +95,7 @@ function increaseScore() {
 	scoreEl.innerHTML = `Score: ${score}`;
 	fs=score;
 }
+
 function startGame() {
 	setTimeout(function() {
 		// coronatime.play();
