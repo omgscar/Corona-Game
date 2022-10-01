@@ -124,7 +124,7 @@ h1 {
 
 @media screen and (max-width: 480px) {
 	#time, #score {
-		font-size: 12px;
+		font-size: 0.9375vw;
 	}
 }
 
